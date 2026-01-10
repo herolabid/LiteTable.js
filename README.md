@@ -2,8 +2,8 @@
 
 > The **DataTables alternative** you've been waiting for - Super lightweight, framework-agnostic table library **under 26KB**
 
-[![npm version](https://img.shields.io/npm/v/@litetable/core.svg)](https://www.npmjs.com/package/@litetable/core)
-[![Bundle Size](https://img.shields.io/bundlephobia/minzip/@litetable/core)](https://bundlephobia.com/package/@litetable/core)
+[![npm version](https://img.shields.io/npm/v/@herolabid/litetable-core.svg)](https://www.npmjs.com/package/@herolabid/litetable-core)
+[![Bundle Size](https://img.shields.io/bundlephobia/minzip/@herolabid/litetable-core)](https://bundlephobia.com/package/@herolabid/litetable-core)
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
 [![TypeScript](https://img.shields.io/badge/TypeScript-5.3-blue)](https://www.typescriptlang.org/)
 [![Package Manager](https://img.shields.io/badge/package%20manager-npm%20%7C%20pnpm%20%7C%20yarn%20%7C%20bun-brightgreen)](INSTALLATION.md)
@@ -32,22 +32,22 @@ LiteTable.js supports **npm, pnpm, yarn, and bun**:
 
 ```bash
 # npm
-npm install @litetable/core @litetable/react
+npm install @herolabid/litetable-core @herolabid/litetable-react
 
 # pnpm
-pnpm add @litetable/core @litetable/react
+pnpm add @herolabid/litetable-core @herolabid/litetable-react
 
 # yarn
-yarn add @litetable/core @litetable/react
+yarn add @herolabid/litetable-core @herolabid/litetable-react
 
 # bun
-bun add @litetable/core @litetable/react
+bun add @herolabid/litetable-core @herolabid/litetable-react
 ```
 
 **Packages:**
-- `@litetable/core` - Framework-agnostic core (~8KB)
-- `@litetable/react` - React adapter (~1KB)
-- `@litetable/vue` - Vue adapter (~1KB)
+- `@herolabid/litetable-core` - Framework-agnostic core (~8KB)
+- `@herolabid/litetable-react` - React adapter (~1KB)
+- `@herolabid/litetable-vue` - Vue adapter (~1KB)
 
 **Total bundle size:**
 - React: **~9KB** (core + react)
@@ -90,11 +90,11 @@ bun add @litetable/core @litetable/react
 ### React
 
 ```bash
-npm install @litetable/core @litetable/react
+npm install @herolabid/litetable-core @herolabid/litetable-react
 ```
 
 ```tsx
-import { useLiteTable } from '@litetable/react'
+import { useLiteTable } from '@herolabid/litetable-react'
 
 function UserTable() {
   const table = useLiteTable({
@@ -154,12 +154,12 @@ function UserTable() {
 ### Vue 3
 
 ```bash
-npm install @litetable/core @litetable/vue
+npm install @herolabid/litetable-core @herolabid/litetable-vue
 ```
 
 ```vue
 <script setup lang="ts">
-import { useLiteTable } from '@litetable/vue'
+import { useLiteTable } from '@herolabid/litetable-vue'
 
 const table = useLiteTable({
   data: users,
@@ -213,7 +213,7 @@ const table = useLiteTable({
 ### Vanilla JS
 
 ```bash
-npm install @litetable/core @litetable/vanilla
+npm install @herolabid/litetable-core @litetable/vanilla
 ```
 
 ```js
@@ -379,7 +379,7 @@ pnpm bench
 1. **Use debounced search** for search inputs:
 
 ```tsx
-import { useDebouncedSearch } from '@litetable/react'
+import { useDebouncedSearch } from '@herolabid/litetable-react'
 
 const [searchValue, setSearch] = useDebouncedSearch(table.search, 300)
 ```

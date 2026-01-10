@@ -2,11 +2,11 @@
 
 > **The DataTables alternative you've been waiting for** - Now with **90% of features in 15% of the size!**
 
-[![npm version](https://img.shields.io/npm/v/@litetable/core.svg)](https://www.npmjs.com/package/@litetable/core)
-[![Bundle Size](https://img.shields.io/bundlephobia/minzip/@litetable/core)](https://bundlephobia.com/package/@litetable/core)
+[![npm version](https://img.shields.io/npm/v/@herolabid/litetable-core.svg)](https://www.npmjs.com/package/@herolabid/litetable-core)
+[![Bundle Size](https://img.shields.io/bundlephobia/minzip/@herolabid/litetable-core)](https://bundlephobia.com/package/@herolabid/litetable-core)
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
 [![TypeScript](https://img.shields.io/badge/TypeScript-5.3-blue)](https://www.typescriptlang.org/)
-[![Zero Dependencies](https://img.shields.io/badge/dependencies-0-green)](https://www.npmjs.com/package/@litetable/core)
+[![Zero Dependencies](https://img.shields.io/badge/dependencies-0-green)](https://www.npmjs.com/package/@herolabid/litetable-core)
 
 ---
 
@@ -46,26 +46,26 @@ LiteTable.js supports **npm, pnpm, yarn, and bun**:
 
 ```bash
 # npm
-npm install @litetable/core
+npm install @herolabid/litetable-core
 
 # pnpm
-pnpm add @litetable/core
+pnpm add @herolabid/litetable-core
 
 # yarn
-yarn add @litetable/core
+yarn add @herolabid/litetable-core
 
 # bun
-bun add @litetable/core
+bun add @herolabid/litetable-core
 ```
 
 ### Framework Adapters (Pick One)
 
 ```bash
 # React (npm)
-npm install @litetable/react
+npm install @herolabid/litetable-react
 
 # Vue (pnpm)
-pnpm add @litetable/vue
+pnpm add @herolabid/litetable-vue
 ```
 
 📖 **See [INSTALLATION.md](INSTALLATION.md) for complete guide including CDN usage**
@@ -73,8 +73,8 @@ pnpm add @litetable/vue
 ### Total Bundle Sizes
 
 ```
-React:   @litetable/core (8KB) + @litetable/react (3KB) = 11KB
-Vue:     @litetable/core (8KB) + @litetable/vue (3KB) = 11KB
+React:   @herolabid/litetable-core (8KB) + @herolabid/litetable-react (3KB) = 11KB
+Vue:     @herolabid/litetable-core (8KB) + @herolabid/litetable-vue (3KB) = 11KB
 
 With ALL plugins:
 React:   11KB + 15KB (all plugins) = 26KB total
@@ -87,7 +87,7 @@ React:   11KB + 15KB (all plugins) = 26KB total
 ### Basic Example (React)
 
 ```tsx
-import { useLiteTable } from '@litetable/react'
+import { useLiteTable } from '@herolabid/litetable-react'
 
 function UserTable() {
   const table = useLiteTable({
@@ -126,13 +126,13 @@ function UserTable() {
 ### Advanced Example with All Features
 
 ```tsx
-import { useLiteTable } from '@litetable/react'
+import { useLiteTable } from '@herolabid/litetable-react'
 import {
   VirtualScrollManager,
   RowSelectionManager,
   ExportManager,
   ColumnResizeManager
-} from '@litetable/core'
+} from '@herolabid/litetable-core'
 
 function AdvancedTable() {
   const table = useLiteTable({

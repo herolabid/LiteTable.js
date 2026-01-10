@@ -23,7 +23,7 @@ pnpm install
 ### 2. Build All Packages
 
 ```bash
-# Build all packages (@litetable/core, @litetable/react, @litetable/vue)
+# Build all packages (@herolabid/litetable-core, @herolabid/litetable-react, @herolabid/litetable-vue)
 pnpm build
 ```
 
@@ -75,16 +75,16 @@ This will run performance benchmarks for:
 
 ```bash
 # For React (choose your package manager)
-npm install @litetable/core @litetable/react
-pnpm add @litetable/core @litetable/react
-yarn add @litetable/core @litetable/react
-bun add @litetable/core @litetable/react
+npm install @herolabid/litetable-core @herolabid/litetable-react
+pnpm add @herolabid/litetable-core @herolabid/litetable-react
+yarn add @herolabid/litetable-core @herolabid/litetable-react
+bun add @herolabid/litetable-core @herolabid/litetable-react
 
 # For Vue (choose your package manager)
-npm install @litetable/core @litetable/vue
-pnpm add @litetable/core @litetable/vue
-yarn add @litetable/core @litetable/vue
-bun add @litetable/core @litetable/vue
+npm install @herolabid/litetable-core @herolabid/litetable-vue
+pnpm add @herolabid/litetable-core @herolabid/litetable-vue
+yarn add @herolabid/litetable-core @herolabid/litetable-vue
+bun add @herolabid/litetable-core @herolabid/litetable-vue
 ```
 
 📖 **See [INSTALLATION.md](INSTALLATION.md) for CDN usage and troubleshooting**
@@ -97,8 +97,8 @@ If you're developing LiteTable itself or want to test locally:
 # In your project's package.json
 {
   "dependencies": {
-    "@litetable/core": "workspace:*",
-    "@litetable/react": "workspace:*"
+    "@herolabid/litetable-core": "workspace:*",
+    "@herolabid/litetable-react": "workspace:*"
   }
 }
 ```
@@ -108,7 +108,7 @@ If you're developing LiteTable itself or want to test locally:
 ### React Basic Example
 
 ```tsx
-import { useLiteTable } from '@litetable/react'
+import { useLiteTable } from '@herolabid/litetable-react'
 
 interface User {
   id: number
@@ -161,7 +161,7 @@ function UserTable() {
 
 ```vue
 <script setup lang="ts">
-import { useLiteTable } from '@litetable/vue'
+import { useLiteTable } from '@herolabid/litetable-vue'
 
 interface User {
   id: number

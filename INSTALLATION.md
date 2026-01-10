@@ -21,52 +21,52 @@ LiteTable.js supports **all major JavaScript package managers**: npm, pnpm, yarn
 
 ```bash
 # For React
-npm install @litetable/core @litetable/react
+npm install @herolabid/litetable-core @herolabid/litetable-react
 
 # For Vue
-npm install @litetable/core @litetable/vue
+npm install @herolabid/litetable-core @herolabid/litetable-vue
 
 # Core only (vanilla JS)
-npm install @litetable/core
+npm install @herolabid/litetable-core
 ```
 
 ### Using pnpm
 
 ```bash
 # For React
-pnpm add @litetable/core @litetable/react
+pnpm add @herolabid/litetable-core @herolabid/litetable-react
 
 # For Vue
-pnpm add @litetable/core @litetable/vue
+pnpm add @herolabid/litetable-core @herolabid/litetable-vue
 
 # Core only (vanilla JS)
-pnpm add @litetable/core
+pnpm add @herolabid/litetable-core
 ```
 
 ### Using yarn
 
 ```bash
 # For React
-yarn add @litetable/core @litetable/react
+yarn add @herolabid/litetable-core @herolabid/litetable-react
 
 # For Vue
-yarn add @litetable/core @litetable/vue
+yarn add @herolabid/litetable-core @herolabid/litetable-vue
 
 # Core only (vanilla JS)
-yarn add @litetable/core
+yarn add @herolabid/litetable-core
 ```
 
 ### Using bun
 
 ```bash
 # For React
-bun add @litetable/core @litetable/react
+bun add @herolabid/litetable-core @herolabid/litetable-react
 
 # For Vue
-bun add @litetable/core @litetable/vue
+bun add @herolabid/litetable-core @herolabid/litetable-vue
 
 # Core only (vanilla JS)
-bun add @litetable/core
+bun add @herolabid/litetable-core
 ```
 
 ---
@@ -76,7 +76,7 @@ bun add @litetable/core
 ### Core Package
 
 ```bash
-@litetable/core@0.2.0
+@herolabid/litetable-core@0.2.0
 ├── 📦 Size: 7.81 KB (gzipped)
 ├── 📁 Includes: Core table logic + all plugins
 └── 🔗 Dependencies: ZERO
@@ -92,7 +92,7 @@ bun add @litetable/core
 ### React Adapter
 
 ```bash
-@litetable/react@0.1.0
+@herolabid/litetable-react@0.1.0
 ├── 📦 Size: 0.98 KB (gzipped)
 ├── 🔗 Peer Dependencies: react >= 16.8.0
 └── 🪝 Exports: useLiteTable hook
@@ -101,7 +101,7 @@ bun add @litetable/core
 ### Vue Adapter
 
 ```bash
-@litetable/vue@0.1.0
+@herolabid/litetable-vue@0.1.0
 ├── 📦 Size: 0.95 KB (gzipped)
 ├── 🔗 Peer Dependencies: vue >= 3.0.0
 └── 🪝 Exports: useLiteTable composable
@@ -177,31 +177,31 @@ After installing, verify the packages are available:
 
 ```typescript
 // For React
-import { useLiteTable } from '@litetable/react'
-import { VirtualScrollManager, ExportManager } from '@litetable/core'
+import { useLiteTable } from '@herolabid/litetable-react'
+import { VirtualScrollManager, ExportManager } from '@herolabid/litetable-core'
 
 // For Vue
-import { useLiteTable } from '@litetable/vue'
-import { VirtualScrollManager, ExportManager } from '@litetable/core'
+import { useLiteTable } from '@herolabid/litetable-vue'
+import { VirtualScrollManager, ExportManager } from '@herolabid/litetable-core'
 
 // Vanilla JS
-import { LiteTable } from '@litetable/core'
+import { LiteTable } from '@herolabid/litetable-core'
 ```
 
 ### Check installed versions
 
 ```bash
 # npm
-npm list @litetable/core @litetable/react
+npm list @herolabid/litetable-core @herolabid/litetable-react
 
 # pnpm
-pnpm list @litetable/core @litetable/react
+pnpm list @herolabid/litetable-core @herolabid/litetable-react
 
 # yarn
 yarn list --pattern "@litetable/*"
 
 # bun
-bun pm ls @litetable/core
+bun pm ls @herolabid/litetable-core
 ```
 
 ---
@@ -226,7 +226,7 @@ npm install -D rollup-plugin-visualizer
 
 ```bash
 npm install -g source-map-explorer
-source-map-explorer node_modules/@litetable/core/dist/index.js
+source-map-explorer node_modules/@herolabid/litetable-core/dist/index.js
 ```
 
 ---
@@ -239,7 +239,7 @@ For quick prototyping without a build step:
 
 ```html
 <script type="module">
-  import { LiteTable } from 'https://esm.sh/@litetable/core@0.2.0'
+  import { LiteTable } from 'https://esm.sh/@herolabid/litetable-core@0.2.0'
 
   const table = new LiteTable({
     data: [...],
@@ -252,7 +252,7 @@ For quick prototyping without a build step:
 
 ```html
 <script type="module">
-  import { LiteTable } from 'https://unpkg.com/@litetable/core@0.2.0/dist/index.js'
+  import { LiteTable } from 'https://unpkg.com/@herolabid/litetable-core@0.2.0/dist/index.js'
 </script>
 ```
 
@@ -260,7 +260,7 @@ For quick prototyping without a build step:
 
 ```html
 <script type="module">
-  import { LiteTable } from 'https://cdn.jsdelivr.net/npm/@litetable/core@0.2.0/dist/index.js'
+  import { LiteTable } from 'https://cdn.jsdelivr.net/npm/@herolabid/litetable-core@0.2.0/dist/index.js'
 </script>
 ```
 
@@ -272,39 +272,39 @@ For quick prototyping without a build step:
 
 ```bash
 # npm
-npm update @litetable/core @litetable/react
+npm update @herolabid/litetable-core @herolabid/litetable-react
 
 # pnpm
-pnpm update @litetable/core @litetable/react
+pnpm update @herolabid/litetable-core @herolabid/litetable-react
 
 # yarn
-yarn upgrade @litetable/core @litetable/react
+yarn upgrade @herolabid/litetable-core @herolabid/litetable-react
 
 # bun
-bun update @litetable/core @litetable/react
+bun update @herolabid/litetable-core @herolabid/litetable-react
 ```
 
 ### Update to specific version
 
 ```bash
 # npm
-npm install @litetable/core@0.2.0
+npm install @herolabid/litetable-core@0.2.0
 
 # pnpm
-pnpm add @litetable/core@0.2.0
+pnpm add @herolabid/litetable-core@0.2.0
 
 # yarn
-yarn add @litetable/core@0.2.0
+yarn add @herolabid/litetable-core@0.2.0
 
 # bun
-bun add @litetable/core@0.2.0
+bun add @herolabid/litetable-core@0.2.0
 ```
 
 ---
 
 ## 🐛 Troubleshooting
 
-### "Cannot find module @litetable/core"
+### "Cannot find module @herolabid/litetable-core"
 
 **Solution:**
 ```bash

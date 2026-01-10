@@ -1,5 +1,5 @@
 {
-  "name": "@litetable/core",
+  "name": "@herolabid/litetable-core",
   "version": "0.2.0",
   "description": "Core logic for LiteTable - Framework-agnostic table library with virtual scrolling, export, and zero dependencies",
   "type": "module",

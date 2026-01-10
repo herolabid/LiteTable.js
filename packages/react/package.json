@@ -1,5 +1,5 @@
 {
-  "name": "@litetable/react",
+  "name": "@herolabid/litetable-react",
   "version": "0.2.0",
   "description": "React adapter for LiteTable - Lightweight table library with hooks",
   "type": "module",
@@ -56,7 +56,7 @@
     "access": "public"
   },
   "peerDependencies": {
-    "@litetable/core": "workspace:*",
+    "@herolabid/litetable-core": "^0.2.0",
     "react": "^16.8.0 || ^17.0.0 || ^18.0.0"
   },
   "devDependencies": {

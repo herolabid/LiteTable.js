@@ -14,7 +14,7 @@ This release adds **5 major advanced features** to LiteTable.js, making it a ser
 Handle **100,000+ rows** smoothly with O(1) rendering performance.
 
 ```typescript
-import { VirtualScrollManager } from '@litetable/core'
+import { VirtualScrollManager } from '@herolabid/litetable-core'
 
 const virtualScroll = new VirtualScrollManager(data, {
   rowHeight: 48,
@@ -32,7 +32,7 @@ const virtualScroll = new VirtualScrollManager(data, {
 Checkbox selection with single/multiple modes and select-all support.
 
 ```typescript
-import { RowSelectionManager } from '@litetable/core'
+import { RowSelectionManager } from '@herolabid/litetable-core'
 
 const selection = new RowSelectionManager({
   mode: 'multiple',
@@ -48,7 +48,7 @@ console.log(selection.getSelectedRows())
 AJAX data loading with native fetch API (no axios!).
 
 ```typescript
-import { ServerSideManager } from '@litetable/core'
+import { ServerSideManager } from '@herolabid/litetable-core'
 
 const serverSide = new ServerSideManager({
   url: 'https://api.example.com/users',
@@ -76,7 +76,7 @@ await serverSide.fetchData({
 Export to **CSV, JSON, Excel (XLSX), and HTML** - all with ZERO dependencies!
 
 ```typescript
-import { ExportManager } from '@litetable/core'
+import { ExportManager } from '@herolabid/litetable-core'
 
 const exportManager = new ExportManager(data, columns)
 
@@ -92,7 +92,7 @@ exportManager.export('html', { filename: 'users' })
 Drag to resize columns with min/max width constraints.
 
 ```typescript
-import { ColumnResizeManager } from '@litetable/core'
+import { ColumnResizeManager } from '@herolabid/litetable-core'
 
 const resizeManager = new ColumnResizeManager({
   minWidth: 50,
@@ -112,16 +112,16 @@ LiteTable.js supports **npm, pnpm, yarn, and bun**:
 
 ```bash
 # npm
-npm install @litetable/core @litetable/react
+npm install @herolabid/litetable-core @herolabid/litetable-react
 
 # pnpm
-pnpm add @litetable/core @litetable/react
+pnpm add @herolabid/litetable-core @herolabid/litetable-react
 
 # yarn
-yarn add @litetable/core @litetable/react
+yarn add @herolabid/litetable-core @herolabid/litetable-react
 
 # bun
-bun add @litetable/core @litetable/react
+bun add @herolabid/litetable-core @herolabid/litetable-react
 ```
 
 ---
@@ -132,9 +132,9 @@ All packages are production-ready and optimized:
 
 | Package | Size (Gzipped) |
 |---------|----------------|
-| `@litetable/core` | **7.81 KB** |
-| `@litetable/react` | **0.98 KB** |
-| `@litetable/vue` | **0.95 KB** |
+| `@herolabid/litetable-core` | **7.81 KB** |
+| `@herolabid/litetable-react` | **0.98 KB** |
+| `@herolabid/litetable-vue` | **0.95 KB** |
 | **Total (React)** | **8.79 KB** |
 | **Total (Vue)** | **8.76 KB** |
 
@@ -165,8 +165,8 @@ All packages are production-ready and optimized:
 ### React
 
 ```tsx
-import { useLiteTable } from '@litetable/react'
-import { VirtualScrollManager, ExportManager } from '@litetable/core'
+import { useLiteTable } from '@herolabid/litetable-react'
+import { VirtualScrollManager, ExportManager } from '@herolabid/litetable-core'
 
 function AdvancedTable() {
   const table = useLiteTable({
@@ -202,8 +202,8 @@ function AdvancedTable() {
 
 ```vue
 <script setup lang="ts">
-import { useLiteTable } from '@litetable/vue'
-import { VirtualScrollManager, ExportManager } from '@litetable/core'
+import { useLiteTable } from '@herolabid/litetable-vue'
+import { VirtualScrollManager, ExportManager } from '@herolabid/litetable-core'
 
 const table = useLiteTable({
   data: users,
@@ -310,4 +310,4 @@ MIT © [Irfan Arsyad](https://github.com/herolabid)
 
 **🎉 Thank you for using LiteTable.js!**
 
-Try it today: `npm install @litetable/core @litetable/react`
+Try it today: `npm install @herolabid/litetable-core @herolabid/litetable-react`
