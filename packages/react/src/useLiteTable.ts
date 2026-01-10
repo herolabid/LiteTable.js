@@ -8,14 +8,14 @@
  */
 
 import { useEffect, useMemo, useState, useCallback, useRef } from 'react'
-import { LiteTable } from '@litetable/core'
+import { LiteTable } from '@herolabid/litetable-core'
 import type {
   TableOptions,
   TableState,
   Column,
   SortDirection,
   PaginationState,
-} from '@litetable/core'
+} from '@herolabid/litetable-core'
 
 /**
  * React table instance with reactive state

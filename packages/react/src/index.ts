@@ -1,5 +1,5 @@
 /**
- * @litetable/react
+ * @herolabid/litetable-react
  *
  * React adapter for LiteTable
  * Clean hooks-based API for React applications
@@ -18,7 +18,7 @@ export type {
   TableState,
   FilterFn,
   SortFn,
-} from '@litetable/core'
+} from '@herolabid/litetable-core'
 
 // Version
-export const VERSION = '0.1.0'
+export const VERSION = '0.2.2'

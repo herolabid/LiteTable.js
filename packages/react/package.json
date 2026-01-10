@@ -1,6 +1,6 @@
 {
   "name": "@herolabid/litetable-react",
-  "version": "0.2.0",
+  "version": "0.2.2",
   "description": "React adapter for LiteTable - Lightweight table library with hooks",
   "type": "module",
   "main": "./dist/index.cjs",

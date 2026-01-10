@@ -71,3 +71,18 @@ yarn.lock
 # Misc
 .cache
 .turbo
+
+# Internal/Private documentation (keep local only)
+NPM_PUBLISH_GUIDE.md
+PUBLISH_NOW.md
+CREATE_RELEASE.md
+CHECK_ORG.md
+GITHUB_DESCRIPTIONS.md
+GITHUB_RELEASE_*.md
+RELEASE_NOTES_*.md
+README_v*.md
+SETUP_COMPLETE.md
+*.timestamp-*.mjs
+
+# Internal scripts
+scripts/publish.sh

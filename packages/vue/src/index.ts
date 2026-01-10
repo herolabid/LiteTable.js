@@ -1,5 +1,5 @@
 /**
- * @litetable/vue
+ * @herolabid/litetable-vue
  *
  * Vue adapter for LiteTable
  * Clean Composition API for Vue 3 applications
@@ -18,7 +18,7 @@ export type {
   TableState,
   FilterFn,
   SortFn,
-} from '@litetable/core'
+} from '@herolabid/litetable-core'
 
 // Version
-export const VERSION = '0.1.0'
+export const VERSION = '0.2.2'

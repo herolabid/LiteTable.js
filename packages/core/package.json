@@ -1,6 +1,6 @@
 {
   "name": "@herolabid/litetable-core",
-  "version": "0.2.0",
+  "version": "0.2.2",
   "description": "Core logic for LiteTable - Framework-agnostic table library with virtual scrolling, export, and zero dependencies",
   "type": "module",
   "main": "./dist/index.cjs",

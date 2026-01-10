@@ -8,14 +8,14 @@
  */
 
 import { ref, computed, onUnmounted, watch, shallowRef } from 'vue'
-import { LiteTable } from '@litetable/core'
+import { LiteTable } from '@herolabid/litetable-core'
 import type {
   TableOptions,
   TableState,
   Column,
   SortDirection,
   PaginationState,
-} from '@litetable/core'
+} from '@herolabid/litetable-core'
 import type { Ref, ComputedRef } from 'vue'
 
 /**

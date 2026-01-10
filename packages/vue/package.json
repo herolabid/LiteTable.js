@@ -1,6 +1,6 @@
 {
   "name": "@herolabid/litetable-vue",
-  "version": "0.2.0",
+  "version": "0.2.2",
   "description": "Vue adapter for LiteTable - Lightweight table library with composables",
   "type": "module",
   "main": "./dist/index.cjs",
