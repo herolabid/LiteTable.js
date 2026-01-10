@@ -58,7 +58,7 @@
     "access": "public"
   },
   "peerDependencies": {
-    "@litetable/core": "^0.2.0",
+    "@litetable/core": "workspace:*",
     "vue": "^3.0.0"
   },
   "devDependencies": {
