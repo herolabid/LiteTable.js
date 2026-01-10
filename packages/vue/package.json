@@ -1,0 +1,51 @@
+{
+  "name": "@litetable/vue",
+  "version": "0.1.0",
+  "description": "Vue adapter for LiteTable - Lightweight table library",
+  "type": "module",
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/index.js",
+      "require": "./dist/index.cjs",
+      "types": "./dist/index.d.ts"
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "dev": "vite build --watch",
+    "build": "tsc && vite build",
+    "typecheck": "tsc --noEmit",
+    "clean": "rm -rf dist"
+  },
+  "keywords": [
+    "table",
+    "vue",
+    "composition-api",
+    "datatable",
+    "typescript",
+    "virtual-scroll",
+    "export"
+  ],
+  "author": "Irfan Arsyad <irfan@herostack.io>",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/herolabid/LiteTable.js"
+  },
+  "peerDependencies": {
+    "@litetable/core": "workspace:*",
+    "vue": "^3.3.0"
+  },
+  "devDependencies": {
+    "typescript": "^5.3.3",
+    "vite": "^5.0.12",
+    "vite-plugin-dts": "^3.7.2",
+    "vue": "^3.4.15"
+  },
+  "sideEffects": false
+}

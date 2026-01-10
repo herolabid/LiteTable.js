@@ -1,0 +1,51 @@
+{
+  "name": "litetable",
+  "version": "0.2.0",
+  "description": "DataTables alternative - Super lightweight, framework-agnostic table library under 26KB with virtual scrolling, export, and zero dependencies",
+  "private": true,
+  "author": "Irfan Arsyad <irfan@herostack.io>",
+  "license": "MIT",
+  "keywords": [
+    "table",
+    "datatable",
+    "datagrid",
+    "virtual-scroll",
+    "typescript",
+    "react",
+    "vue",
+    "vanilla-js",
+    "lightweight",
+    "headless",
+    "export",
+    "zero-dependencies"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/herolabid/LiteTable.js"
+  },
+  "scripts": {
+    "dev": "pnpm --filter \"./packages/**\" --parallel dev",
+    "build": "pnpm --filter \"./packages/**\" --parallel build",
+    "test": "vitest",
+    "bench": "vitest bench",
+    "lint": "eslint . --ext .ts,.tsx",
+    "format": "prettier --write \"**/*.{ts,tsx,md,json}\"",
+    "typecheck": "pnpm --filter \"./packages/**\" --parallel typecheck",
+    "clean": "pnpm --filter \"./packages/**\" --parallel clean && rm -rf node_modules"
+  },
+  "devDependencies": {
+    "@types/node": "^20.11.5",
+    "@typescript-eslint/eslint-plugin": "^6.19.0",
+    "@typescript-eslint/parser": "^6.19.0",
+    "eslint": "^8.56.0",
+    "eslint-config-prettier": "^9.1.0",
+    "prettier": "^3.2.4",
+    "terser": "^5.44.1",
+    "typescript": "^5.3.3",
+    "vite": "^5.0.12",
+    "vitest": "^1.2.1"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}
