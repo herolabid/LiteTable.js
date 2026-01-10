@@ -1,7 +1,7 @@
 {
   "name": "@litetable/vue",
-  "version": "0.1.0",
-  "description": "Vue adapter for LiteTable - Lightweight table library",
+  "version": "0.2.0",
+  "description": "Vue adapter for LiteTable - Lightweight table library with composables",
   "type": "module",
   "main": "./dist/index.cjs",
   "module": "./dist/index.js",
@@ -14,7 +14,9 @@
     }
   },
   "files": [
-    "dist"
+    "dist",
+    "README.md",
+    "LICENSE"
   ],
   "scripts": {
     "dev": "vite build --watch",
@@ -25,21 +27,39 @@
   "keywords": [
     "table",
     "vue",
+    "vue3",
     "composition-api",
+    "composables",
     "datatable",
+    "datagrid",
     "typescript",
     "virtual-scroll",
-    "export"
+    "export",
+    "headless",
+    "lightweight",
+    "zero-dependencies"
   ],
   "author": "Irfan Arsyad <irfan@herostack.io>",
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/herolabid/LiteTable.js"
+    "url": "git+https://github.com/herolabid/LiteTable.js.git",
+    "directory": "packages/vue"
+  },
+  "homepage": "https://github.com/herolabid/LiteTable.js#readme",
+  "bugs": {
+    "url": "https://github.com/herolabid/LiteTable.js/issues"
+  },
+  "funding": {
+    "type": "buymeacoffee",
+    "url": "https://www.buymeacoffee.com/herostack"
+  },
+  "publishConfig": {
+    "access": "public"
   },
   "peerDependencies": {
-    "@litetable/core": "workspace:*",
-    "vue": "^3.3.0"
+    "@litetable/core": "^0.2.0",
+    "vue": "^3.0.0"
   },
   "devDependencies": {
     "typescript": "^5.3.3",

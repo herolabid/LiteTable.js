@@ -1,7 +1,7 @@
 {
   "name": "@litetable/react",
-  "version": "0.1.0",
-  "description": "React adapter for LiteTable - Lightweight table library",
+  "version": "0.2.0",
+  "description": "React adapter for LiteTable - Lightweight table library with hooks",
   "type": "module",
   "main": "./dist/index.cjs",
   "module": "./dist/index.js",
@@ -14,7 +14,9 @@
     }
   },
   "files": [
-    "dist"
+    "dist",
+    "README.md",
+    "LICENSE"
   ],
   "scripts": {
     "dev": "vite build --watch",
@@ -27,19 +29,35 @@
     "react",
     "hooks",
     "datatable",
+    "datagrid",
     "typescript",
     "virtual-scroll",
-    "export"
+    "export",
+    "headless",
+    "lightweight",
+    "zero-dependencies"
   ],
   "author": "Irfan Arsyad <irfan@herostack.io>",
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/herolabid/LiteTable.js"
+    "url": "git+https://github.com/herolabid/LiteTable.js.git",
+    "directory": "packages/react"
+  },
+  "homepage": "https://github.com/herolabid/LiteTable.js#readme",
+  "bugs": {
+    "url": "https://github.com/herolabid/LiteTable.js/issues"
+  },
+  "funding": {
+    "type": "buymeacoffee",
+    "url": "https://www.buymeacoffee.com/herostack"
+  },
+  "publishConfig": {
+    "access": "public"
   },
   "peerDependencies": {
-    "@litetable/core": "workspace:*",
-    "react": "^18.0.0"
+    "@litetable/core": "^0.2.0",
+    "react": "^16.8.0 || ^17.0.0 || ^18.0.0"
   },
   "devDependencies": {
     "@types/react": "^18.2.48",
