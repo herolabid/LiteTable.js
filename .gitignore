@@ -86,3 +86,9 @@ SETUP_COMPLETE.md
 
 # Internal scripts
 scripts/publish.sh
+
+# Data files and folders
+data/
+*.data
+*.csv
+*.json.data
