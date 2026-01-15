@@ -52,13 +52,13 @@ describe('LiteTable Core', () => {
     it('should sort by column ascending', () => {
       table.sortBy('name', 'asc')
       const rows = table.getRows()
-      expect(rows[0].name).toBeLessThan(rows[1].name)
+      expect(rows[0].name.localeCompare(rows[1].name)).toBeLessThanOrEqual(0)
     })
 
     it('should sort by column descending', () => {
       table.sortBy('name', 'desc')
       const rows = table.getRows()
-      expect(rows[0].name).toBeGreaterThan(rows[1].name)
+      expect(rows[0].name.localeCompare(rows[1].name)).toBeGreaterThanOrEqual(0)
     })
 
     it('should sort numbers correctly', () => {

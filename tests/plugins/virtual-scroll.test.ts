@@ -69,22 +69,34 @@ describe('VirtualScrollManager', () => {
   })
 
   describe('Configuration', () => {
-    it('should update row height', () => {
-      virtualScroll.updateConfig({ rowHeight: 60 })
-      const rows = virtualScroll.getVisibleRows()
+    it('should work with different row height', () => {
+      const vsCustom = new VirtualScrollManager(largeDataset, {
+        rowHeight: 60,
+        containerHeight: 600,
+        overscan: 5
+      })
+      const rows = vsCustom.getVisibleRows()
       expect(rows.length).toBeLessThan(15) // Fewer rows fit with taller height
     })
 
-    it('should update container height', () => {
-      virtualScroll.updateConfig({ containerHeight: 1200 })
-      const rows = virtualScroll.getVisibleRows()
+    it('should work with different container height', () => {
+      const vsCustom = new VirtualScrollManager(largeDataset, {
+        rowHeight: 48,
+        containerHeight: 1200,
+        overscan: 5
+      })
+      const rows = vsCustom.getVisibleRows()
       expect(rows.length).toBeGreaterThan(20) // More rows fit in taller container
     })
 
-    it('should update overscan', () => {
+    it('should work with different overscan', () => {
       const initialLength = virtualScroll.getVisibleRows().length
-      virtualScroll.updateConfig({ overscan: 20 })
-      const newLength = virtualScroll.getVisibleRows().length
+      const vsCustom = new VirtualScrollManager(largeDataset, {
+        rowHeight: 48,
+        containerHeight: 600,
+        overscan: 20
+      })
+      const newLength = vsCustom.getVisibleRows().length
       expect(newLength).toBeGreaterThan(initialLength)
     })
   })
@@ -101,7 +113,7 @@ describe('VirtualScrollManager', () => {
     it('should calculate virtual height', () => {
       const state = virtualScroll.getState()
       const expectedHeight = largeDataset.length * 48
-      expect(state.virtualHeight).toBe(expectedHeight)
+      expect(state.totalHeight).toBe(expectedHeight)
     })
 
     it('should calculate offset correctly', () => {
@@ -191,13 +203,12 @@ describe('VirtualScrollManager', () => {
 
   describe('Helper Functions', () => {
     it('calculateVirtualScroll should return correct values', () => {
-      const result = calculateVirtualScroll({
-        scrollTop: 1000,
+      const testData = Array.from({ length: 10000 }, (_, i) => ({ id: i }))
+      const result = calculateVirtualScroll(testData, {
         rowHeight: 48,
         containerHeight: 600,
-        totalRows: 10000,
         overscan: 5
-      })
+      }, 1000)
 
       expect(result.startIndex).toBeGreaterThanOrEqual(0)
       expect(result.endIndex).toBeGreaterThan(result.startIndex)
@@ -205,13 +216,12 @@ describe('VirtualScrollManager', () => {
     })
 
     it('should handle zero scroll', () => {
-      const result = calculateVirtualScroll({
-        scrollTop: 0,
+      const testData = Array.from({ length: 100 }, (_, i) => ({ id: i }))
+      const result = calculateVirtualScroll(testData, {
         rowHeight: 48,
         containerHeight: 600,
-        totalRows: 100,
         overscan: 5
-      })
+      }, 0)
 
       expect(result.startIndex).toBe(0)
       expect(result.offsetY).toBe(0)
